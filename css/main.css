@@ -1069,7 +1069,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background: transparent;
+  background: '../image/teemo.jpg';
 }
 .header-inner {
   position: relative;
@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1401;
+  background: #ff20cb;
 }
 .links-of-blogroll {
   font-size: 13px;
