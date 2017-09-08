@@ -1655,11 +1655,11 @@ pre .javascript .function {
   font-size: 18px;
   font-family: "Mic rosoft Yahei";
   background: #f44336;
-  background: #1a9be8;
+  background: #8ad7ff;
 }
 #rewardButton span:hover {
   background: #f7877f;
-  background: rgba(26,155,232,0.5);
+  background: rgba(138,215,255,0.5);
 }
 #QR {
   padding-top: 20px;
@@ -1755,7 +1755,8 @@ pre .javascript .function {
 .post-copyright {
   margin: 2em 0 0;
   padding: 0.5em 1em;
-  border-left: 3px solid #ff1700;
+  border-left: 3px solid;
+#1a9be8
   background-color: #f9f9f9;
   list-style: none;
 }
@@ -1936,7 +1937,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb14a;
+  background: #ffa175;
 }
 .links-of-blogroll {
   font-size: 13px;
