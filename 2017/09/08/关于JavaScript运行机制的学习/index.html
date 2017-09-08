@@ -102,12 +102,12 @@
 <meta property="og:site_name" content="提莫队长">
 <meta property="og:description" content="最近三周时间给高程1-7章又刷了一遍（这已经是第四遍），看了几篇JS执行上下文的东西，自认为对JS执行机制已经是突破天际。昨天牛客上看到这道题竟一脸懵逼，自己真是图样图森破，还是要多读书才能与太阳肩并肩啊。 12345678910function foo() &amp;#123;    console.log(&apos;first&apos;);    setTimeOut(function() &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="/08/关于JavaScript运行机制的学习/并发和并行">
-<meta property="og:updated_time" content="2017-09-08T11:42:22.000Z">
+<meta property="og:image" content="http://ovyn493ey.bkt.clouddn.com/blogconcurrency.jpeg">
+<meta property="og:updated_time" content="2017-09-08T12:27:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于JavaScript运行机制的学习">
 <meta name="twitter:description" content="最近三周时间给高程1-7章又刷了一遍（这已经是第四遍），看了几篇JS执行上下文的东西，自认为对JS执行机制已经是突破天际。昨天牛客上看到这道题竟一脸懵逼，自己真是图样图森破，还是要多读书才能与太阳肩并肩啊。 12345678910function foo() &amp;#123;    console.log(&apos;first&apos;);    setTimeOut(function() &amp;#123;">
-<meta name="twitter:image" content="/08/关于JavaScript运行机制的学习/并发和并行">
+<meta name="twitter:image" content="http://ovyn493ey.bkt.clouddn.com/blogconcurrency.jpeg">
 
 
 
@@ -368,8 +368,9 @@
 <p>作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。若以多线程的方式操作这些DOM，则可能出现操作的冲突。假设有两个线程同时操作一个DOM元素，线程1要求浏览器删除DOM，而线程2却要求修改DOM样式，这时浏览器就无法决定采用哪个线程的操作。当然，我们可以为浏览器引入“锁”的机制来解决这些冲突，但这会大大提高复杂性，所以JavaScript从诞生开始就选择了单线程执行。</p>
 <p>JavaScript是单线程的，在某一时刻内只能执行特定的一个任务，并且会阻塞其它任务执行。那么对于类似I/O等耗时的任务，就没必要等待他们执行完后才继续后面的操作。在这些任务完成前，JavaScript完全可以往下执行其他操作，当这些耗时的任务完成后则以回调的方式执行相应处理。这些就是JavaScript与生俱来的特性：异步与回调。</p>
 <ol>
-<li><strong>并发</strong>与<strong>并行</strong><br><img src="/08/关于JavaScript运行机制的学习/并发和并行" alt="../image/concurrency.jpeg"></li>
+<li><strong>并发</strong>与<strong>并行</strong></li>
 </ol>
+<p><img src="http://ovyn493ey.bkt.clouddn.com/blogconcurrency.jpeg" alt="并发和并行"></p>
 <ul>
 <li>concurrency 并发</li>
 <li>parallelism 并行</li>
